@@ -1,8 +1,8 @@
 (setq remaining_moves (split-string
-		       (with-temp-buffer
-			 (insert-file-contents "input_day1.txt")
-			 (buffer-string)
-			 )))
+                       (with-temp-buffer
+                         (insert-file-contents "input_day1.txt")
+                         (buffer-string)
+                         )))
 
 (setq current_position 50)
 (setq count_of_zero 0)
