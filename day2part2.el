@@ -23,16 +23,16 @@
 
 	    (dolist
 		(product_id (number-sequence range_start range_end 1))
-; (print product_id)
+					; (print product_id)
 
-	    
+	      
 
 	      (let ((product_id_str (number-to-string product_id)))
 		(let ((product_id_len (length product_id_str)))
 
 		  (setq product_is_invalid nil)
 
-	   
+		  
 
 		  (dolist
 		      (repetitions
@@ -42,11 +42,11 @@
 			  (/ product_id_len repetitions)))
 
 		      (when (= (% product_id_len repetitions) 0)
-		      
-		      
-			;(print product_id)
-			;(print repetitions)
-			;(print repetition_size)
+			
+			
+					;(print product_id)
+					;(print repetitions)
+					;(print repetition_size)
 			(when
 			    (seq-every-p
 			     (lambda (repeated_part_start_idx)
@@ -65,12 +65,12 @@
 
 			  (setq product_is_invalid t)
 			  (print product_id)
-								 
+			  
 			  )
 			
 			)
 		      )
-		      
+		    
 		    )
 		  (when product_is_invalid
 		    (setq invalid_id_sum (+ invalid_id_sum product_id))
@@ -87,4 +87,4 @@
     )
   )
 
-  
+
